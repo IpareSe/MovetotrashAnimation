@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14113" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_0" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="AnimVC" customModule="KeyFrameDemo" customModuleProvider="target">
+            <connections>
+                <outlet property="IBbtn" destination="pIm-c3-Hje" id="sNq-ek-gZy"/>
+                <outlet property="IBimgBell" destination="R2E-as-u11" id="dZH-wp-y06"/>
+                <outlet property="IBlblDescription" destination="Sv4-5Q-ghu" id="RZc-QX-MFe"/>
+                <outlet property="IBlblTitle" destination="zRj-Bx-8tb" id="KuN-wP-TjW"/>
+                <outlet property="bucketLid" destination="laR-ox-4Ar" id="xd3-Px-mC6"/>
+                <outlet property="bucketbody" destination="eU2-v6-S0G" id="5Ww-BK-quF"/>
+                <outlet property="mic" destination="UOJ-uB-ESI" id="HW8-9c-EAD"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="input_mic" translatesAutoresizingMaskIntoConstraints="NO" id="UOJ-uB-ESI">
+                    <rect key="frame" x="160" y="542" width="20" height="26"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="26" id="09y-r5-gDv"/>
+                        <constraint firstAttribute="width" constant="20" id="ZOQ-0O-yoU"/>
+                    </constraints>
+                </imageView>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="bucket_lid_style2" translatesAutoresizingMaskIntoConstraints="NO" id="laR-ox-4Ar">
+                    <rect key="frame" x="150" y="492" width="20" height="16"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="16" id="vGM-sX-ewJ"/>
+                    </constraints>
+                </imageView>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="bucket_body_style2" translatesAutoresizingMaskIntoConstraints="NO" id="eU2-v6-S0G">
+                    <rect key="frame" x="150" y="508" width="20" height="20"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="20" id="Yke-FC-I9W"/>
+                    </constraints>
+                </imageView>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="pIm-c3-Hje">
+                    <rect key="frame" x="0.0" y="528" width="320" height="40"/>
+                    <color key="backgroundColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="40" id="QCw-Cl-EkM"/>
+                    </constraints>
+                    <state key="normal" title="Move to trash"/>
+                    <connections>
+                        <action selector="btnAnimTouched:" destination="-1" eventType="touchUpInside" id="uWj-0M-bag"/>
+                    </connections>
+                </button>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Hello, my name is paresh and i am working on the animation stuffs" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Sv4-5Q-ghu">
+                    <rect key="frame" x="16" y="351" width="288" height="41"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="THis is my  title" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zRj-Bx-8tb">
+                    <rect key="frame" x="16" y="313" width="288" height="30"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="25"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="notification" translatesAutoresizingMaskIntoConstraints="NO" id="R2E-as-u11">
+                    <rect key="frame" x="140" y="110" width="40" height="40"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="40" id="pNO-rv-PU5"/>
+                        <constraint firstAttribute="width" constant="40" id="qcK-ek-nAa"/>
+                    </constraints>
+                </imageView>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="Sv4-5Q-ghu" secondAttribute="trailing" constant="16" id="JC1-wp-AuG"/>
+                <constraint firstItem="pIm-c3-Hje" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="M95-BK-c4a"/>
+                <constraint firstItem="eU2-v6-S0G" firstAttribute="centerX" secondItem="fnl-2z-Ty3" secondAttribute="centerX" id="MGF-4U-sXM"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="bottom" secondItem="pIm-c3-Hje" secondAttribute="bottom" id="NXB-if-2ob"/>
+                <constraint firstItem="UOJ-uB-ESI" firstAttribute="leading" secondItem="eU2-v6-S0G" secondAttribute="trailing" constant="-10" id="QUE-XM-la2"/>
+                <constraint firstItem="zRj-Bx-8tb" firstAttribute="leading" secondItem="Sv4-5Q-ghu" secondAttribute="leading" id="Ssy-0h-0MA"/>
+                <constraint firstItem="R2E-as-u11" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" constant="90" id="WOg-0A-Av0"/>
+                <constraint firstItem="pIm-c3-Hje" firstAttribute="top" secondItem="eU2-v6-S0G" secondAttribute="bottom" id="cba-y9-Fit"/>
+                <constraint firstItem="R2E-as-u11" firstAttribute="centerX" secondItem="fnl-2z-Ty3" secondAttribute="centerX" id="co7-yz-9QI"/>
+                <constraint firstItem="laR-ox-4Ar" firstAttribute="top" secondItem="Sv4-5Q-ghu" secondAttribute="bottom" constant="100" id="cun-yy-rpj"/>
+                <constraint firstItem="laR-ox-4Ar" firstAttribute="trailing" secondItem="eU2-v6-S0G" secondAttribute="trailing" id="cxC-Wa-4nR"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="pIm-c3-Hje" secondAttribute="trailing" id="eqg-LU-7cE"/>
+                <constraint firstItem="laR-ox-4Ar" firstAttribute="leading" secondItem="eU2-v6-S0G" secondAttribute="leading" id="rlz-LS-8jt"/>
+                <constraint firstItem="UOJ-uB-ESI" firstAttribute="bottom" secondItem="pIm-c3-Hje" secondAttribute="bottom" id="siu-rC-cDl"/>
+                <constraint firstItem="Sv4-5Q-ghu" firstAttribute="top" secondItem="zRj-Bx-8tb" secondAttribute="bottom" constant="8" id="uMU-Z0-Fyx"/>
+                <constraint firstItem="Sv4-5Q-ghu" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="16" id="xXb-TJ-NAO"/>
+                <constraint firstItem="eU2-v6-S0G" firstAttribute="top" secondItem="laR-ox-4Ar" secondAttribute="bottom" id="xjx-AD-cbI"/>
+                <constraint firstItem="zRj-Bx-8tb" firstAttribute="trailing" secondItem="Sv4-5Q-ghu" secondAttribute="trailing" id="z6e-qm-JdR"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="bucket_body_style2" width="22" height="20"/>
+        <image name="bucket_lid_style2" width="22" height="12"/>
+        <image name="input_mic" width="26" height="36"/>
+        <image name="notification" width="35" height="35"/>
+    </resources>
+</document>
