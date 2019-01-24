@@ -65,30 +65,30 @@ class AnimVC: UIViewController {
     }
     
     @IBAction func btnAnimTouched(_ sender: Any) {
-        self.playSound()
-        if #available(iOS 10.0, *) {
-            Timer.scheduledTimer(withTimeInterval: 0.4, repeats: true) { (timer) in
-                print("Rate :)")
-                if !(self.player?.isPlaying)!
-                {
-                    timer.invalidate()
-                    self.IBimgBell.transform = CGAffineTransform(rotationAngle: 0)
-                }
-                else
-                {
-                    self.animateBell()
-                }
-            }
-        } else {
-            // Fallback on earlier versions
-        }
-        //            self.animateTheLabels()
-//            self.openBucket()
-//            self.DriveMicUpAnimation()
-//            Timer.scheduledTimer(withTimeInterval: 0.6, repeats: false) { (timer) in
-//                self.DriveMicDownAnimation()
-//                timer.invalidate()
+//        self.playSound()
+//        if #available(iOS 10.0, *) {
+//            Timer.scheduledTimer(withTimeInterval: 0.4, repeats: true) { (timer) in
+//                print("Rate :)")
+//                if !(self.player?.isPlaying)!
+//                {
+//                    timer.invalidate()
+//                    self.IBimgBell.transform = CGAffineTransform(rotationAngle: 0)
+//                }
+//                else
+//                {
+//                    self.animateBell()
+//                }
 //            }
+//        } else {
+//            // Fallback on earlier versions
+//        }
+        //            self.animateTheLabels()
+            self.openBucket()
+            self.DriveMicUpAnimation()
+            Timer.scheduledTimer(withTimeInterval: 0.6, repeats: false) { (timer) in
+                self.DriveMicDownAnimation()
+                timer.invalidate()
+            }
     }
     
     func setBucketLayer()
